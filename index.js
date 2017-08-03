@@ -6,8 +6,7 @@ const downloadGitRepo = require('download-git-repo');
 const inquirer = require('inquirer');
 
 let next = (projectName, projectSeedPath, clone) => {
-    // console.log('projectName:', projectName + '\n');
-    
+
     if (/^https?:\/\//i.test(projectSeedPath)) {
         projectSeedPath = projectSeedPath.replace(/\.git$/i,'');
     }
@@ -62,7 +61,7 @@ module.exports = (projectName, projectSeedPath, clone) => {
 			if (ans.deleteProject) {
 				shell.rm('-rf', projectPath);
 			} else {
-				projectName = ans.projectName; // new projectName
+				projectName = ans.projectName; 
 
 			}
 			next(projectName, projectSeedPath, clone);
