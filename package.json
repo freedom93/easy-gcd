@@ -1,6 +1,6 @@
 {
-  "name": "easyGCD",
-  "version": "0.0.1",
+  "name": "easy-gcd",
+  "version": "0.0.2",
   "description": "A tool for primary coders who want to learn coding for first time.",
   "main": "index.js",
   "bin": {
